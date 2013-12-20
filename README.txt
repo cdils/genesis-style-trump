@@ -2,20 +2,22 @@ Genesis Style Trump
 ===================
 Contributors: cdils
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVHE2NBF3FBLW
-Tags: css, stylesheet, genesis, genesiswp, studiopress
+Tags: css, style sheet, genesis, genesiswp, studiopress
 Requires at least: 3.8.0
 Tested up to: 3.8
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Loads Genesis child theme stylesheet after plugin stylesheets
+Loads Genesis child theme style sheet after plugin style sheets
 
 == Description ==
 
-This plugin removes the Genesis child theme stylesheet and reloads it at a later priority, allowing plugin stylesheets to load first.
+This plugin removes the Genesis child theme style sheet and reloads it at a later priority, allowing plugin style
+sheets to load first.
 
-By loading the child theme stylesheet later, it allows for easier CSS customizations in child theme stylesheets by giving more weight to the child theme stylesheet in order to trump plugin styles without using the !important declaration. 
+By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme
+style sheet trumps plugin styles without using the !important declaration. 
 
 == Installation ==
 
@@ -29,7 +31,8 @@ This section describes how to install the plugin and get it working.
 
 = How do I know if the plugin is working? =
 
-After activating the plugin, refresh your site and view the source code. You should see your child theme's stylesheet loading after all plugin stylesheets.
+After activating the plugin, refresh your site and view the source code. You should see your child theme's style sheet
+loading after all plugin style sheets.
 
 = The plugin won't activate =
 
