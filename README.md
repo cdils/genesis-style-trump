@@ -8,6 +8,10 @@ This plugin removes the Genesis child theme stylesheet and reloads it at a later
 
 By loading the child theme stylesheet later, it allows for easier CSS customizations in child theme stylesheets by giving more weight to the child theme stylesheet in order to trump plugin styles without using the !important declaration. 
 
+## Requirements
+ * WordPress 3.8
+ * Genesis 2.0
+
 ## Installation
 
 ### Upload
