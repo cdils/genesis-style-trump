@@ -1,6 +1,8 @@
 <?php
 /**
  * Genesis Style Trump
+ * 
+ * Read more about why I created this plugin at http://www.carriedils.com/woocommerce-genesis-important-style/
  *
  * @package           Genesis_Style_Trump
  * @author            Carrie Dils
