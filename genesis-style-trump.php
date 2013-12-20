@@ -23,7 +23,7 @@
 
 // If this file is called directly, abort.
 if ( ! defined( 'ABSPATH' ) ) {
-    die( __( 'Sorry, you are not allowed to access this page directly.', 'genesis-style-trump' ) );
+    die;
 }
 
 add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
