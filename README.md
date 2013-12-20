@@ -1,4 +1,4 @@
-genesis-style-trump
+Genesis Style Trump
 ===================
 Contributors: cdils
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVHE2NBF3FBLW
