@@ -1,12 +1,10 @@
 # Genesis Style Trump
 
-Loads Genesis child theme stylesheet after plugin stylesheets.
+Loads Genesis child theme style sheet after plugin style sheets.
 
 ## Description 
 
-This plugin removes the Genesis child theme stylesheet and reloads it at a later priority, allowing plugin stylesheets to load first.
-
-By loading the child theme stylesheet later, it allows for easier CSS customizations in child theme stylesheets by giving more weight to the child theme stylesheet in order to trump plugin styles without using the !important declaration. 
+This plugin removes the Genesis child theme style sheet and reloads it at a later priority, allowing plugin style sheets to load first.
 
 ## Requirements
  * WordPress 3.8
