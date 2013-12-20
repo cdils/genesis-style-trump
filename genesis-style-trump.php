@@ -21,7 +21,7 @@
 
 // If this file is called directly, abort.
 if ( !defined( 'ABSPATH' ) ) {
-    die( __("Sorry, you are not allowed to access this page directly.") );
+    die( __( "Sorry, you are not allowed to access this page directly." ) );
 }
 
 register_activation_hook( __FILE__, 'genesisstyletrump_activation' );
@@ -54,7 +54,7 @@ function genesisstyletrump_deactivate( $genesis_version = '2.0.0', $wp_version =
 
 add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
 /**
-* Hook into Genesis when during setup and remove Genesis child theme style sheet
+* Remove Genesis child theme style sheet
 *
 * @uses  genesis_meta  <genesis/lib/css/load-styles.php>
 * @since 0.1.0
@@ -71,5 +71,5 @@ add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 999 );
 * to give any plugin stylesheets a chance to load first
 *
 * @uses wp_enqueue_scripts <http://codex.wordpress.org/Function_Reference/wp_enqueue_style>
-* @since 1.0.0
+* @since 0.1.0
 */
