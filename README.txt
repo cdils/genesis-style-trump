@@ -19,6 +19,8 @@ sheets to load first.
 By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme
 style sheet trumps plugin styles without using the !important declaration. 
 
+Read more about why I created this plugin at `http://www.carriedils.com/woocommerce-genesis-important-style/`.
+
 == Installation ==
 
 This section describes how to install the plugin and get it working.
