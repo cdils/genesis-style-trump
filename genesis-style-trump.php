@@ -52,13 +52,18 @@ function genesisstyletrump_deactivate( $genesis_version = '2.0.0', $wp_version =
         
 }
 
-remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
+add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
 /**
-* Remove Genesis child theme style sheet
+* Hook into Genesis when during setup and remove Genesis child theme style sheet
 *
 * @uses  genesis_meta  <genesis/lib/css/load-styles.php>
 * @since 0.1.0
 */ 
+function genesisstyletrump_load_stylesheet() {
+
+	remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
+
+}
 
 add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 999 );
 /**
