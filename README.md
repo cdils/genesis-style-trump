@@ -6,6 +6,8 @@ Loads Genesis child theme style sheet after plugin style sheets.
 
 This plugin removes the Genesis child theme style sheet and reloads it at a later priority, allowing plugin style sheets to load first.
 
+Read more about why I created this plugin [here](http://www.carriedils.com/woocommerce-genesis-important-style/).
+
 ## Requirements
  * WordPress 3.8
  * Genesis 2.0
