@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: css, stylsheet, genesis, genesiswp, studiopress
 Requires at least: 3.8.0
 Tested up to: 3.8
-Stable tag: 0.1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,5 +37,5 @@ You must have Genesis or a Genesis child theme installed and activated on your s
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Initial release.
