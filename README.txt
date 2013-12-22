@@ -50,10 +50,6 @@ If the plugin does use !important, you can either !important it right back (your
 
 Not really. It’s designed only to help you override plugin styles more efficiently by reducing the need to use !important in your child theme’s style sheet.
 
-= The plugin won't activate =
-
-You must have Genesis or a Genesis child theme installed and activated on your site.
-
 == Changelog ==
 
 = 1.0.0 =
