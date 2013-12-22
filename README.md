@@ -43,3 +43,5 @@ Then go to your Plugins screen and click __Activate__.
 
 Built by [Carrie Dils](https://twitter.com/cdils)  
 Copyright 2013 [Carrie Dils](http://www.carriedils.com/)
+
+Props to [Gary Jones](https://twitter.com/garyj) for editing suggestions and walking me through deployment.

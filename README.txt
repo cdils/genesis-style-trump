@@ -1,6 +1,6 @@
 Genesis Style Trump
 ===================
-Contributors: cdils
+Contributors: cdils, garyj
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVHE2NBF3FBLW
 Tags: css, style sheet, genesis, genesiswp, studiopress
 Requires at least: 3.8.0
@@ -31,10 +31,24 @@ This section describes how to install the plugin and get it working.
 
 == Frequently Asked Questions ==
 
+= Do this plugin require the Genesis Framework? =
+
+This plugin is designed for sites running on the Genesis Framework. While you could successfully activate the plugin on a non-Genesis site, it is useless as the code relies on Genesis-specific actions.
+
 = How do I know if the plugin is working? =
 
 After activating the plugin, refresh your site and view the source code. You should see your child theme's style sheet
 loading after all plugin style sheets.
+
+== Can I change any plugins styles from my child themes style sheet?  ==
+
+Yes! As long as the plugin style sheet doesn't include !important, you'll be able to use the same selector in your child theme to override the plugin.
+
+If the plugin does use !important, you can either !important it right back (your !important will trump) or use a higher level of specificity.
+
+= Does this plugin have any performance benefits? =
+
+Not really. It’s designed only to help you override plugin styles more efficiently by reducing the need to use !important in your child theme’s style sheet.
 
 = The plugin won't activate =
 
