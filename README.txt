@@ -16,8 +16,7 @@ Loads Genesis child theme style sheet after plugin style sheets
 This plugin removes the Genesis child theme style sheet and reloads it at a later priority, allowing plugin style
 sheets to load first.
 
-By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme
-style sheet trumps plugin styles without using the !important declaration. 
+By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme style sheet trumps plugin styles without using the !important declaration. 
 
 Read more about why I created this plugin at `http://www.carriedils.com/woocommerce-genesis-important-style/`.
 
