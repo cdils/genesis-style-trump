@@ -1,5 +1,5 @@
-Genesis Style Trump
-===================
+===Genesis Style Trump===
+
 Contributors: cdils, garyj
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVHE2NBF3FBLW
 Tags: css, style sheet, genesis, genesiswp, studiopress
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Loads Genesis child theme style sheet after plugin style sheets
+Loads Genesis child theme style sheet after plugin style sheets.
 
 == Description ==
 
@@ -39,7 +39,7 @@ This plugin is designed for sites running on the Genesis Framework. While you co
 After activating the plugin, refresh your site and view the source code. You should see your child theme's style sheet
 loading after all plugin style sheets.
 
-== Can I change any plugins styles from my child themes style sheet?  ==
+= Can I change any plugins styles from my child themes style sheet? =
 
 Yes! As long as the plugin style sheet doesn't include !important, you'll be able to use the same selector in your child theme to override the plugin.
 
