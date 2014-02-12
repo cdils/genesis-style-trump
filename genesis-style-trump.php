@@ -13,7 +13,7 @@
  * Plugin Name:       Genesis Style Trump
  * Plugin URI:        http://wordpress.org/plugins/genesis-style-trump
  * Description:       Loads Genesis child theme style sheet after plugin styles.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Carrie Dils
  * Author URI:        http://www.carriedils.com
  * Text Domain:       genesis-style-trump
@@ -31,14 +31,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
 /**
-* Move Genesis child theme style sheet to a much later priority to give any plugins a chance to load first.
-*
-* @since 1.0.0
-*/
+ * Move Genesis child theme style sheet to a much later priority to give any plugins a chance to load first.
+ *
+ * @since 1.0.0
+ */
 function genesisstyletrump_load_stylesheet() {
 
 	// If Parallax Pro theme is active, enqueue Genesis Style Trump at earlier priority
-	$priority = ( wp_get_theme() == 'Parallax Pro Theme' ) ? 14 : 999;
+	$priority = 'Parallax Pro Theme' == wp_get_theme() ? 14 : 999;
 
 	remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
 	add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', $priority );
