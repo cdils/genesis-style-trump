@@ -1,7 +1,7 @@
 <?php
 /**
  * Genesis Style Trump
- * 
+ *
  * Read more about why I created this plugin at http://www.carriedils.com/woocommerce-genesis-important-style/
  *
  * @package           Genesis_Style_Trump
@@ -34,8 +34,12 @@ add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
 * Move Genesis child theme style sheet to a much later priority to give any plugins a chance to load first.
 *
 * @since 1.0.0
-*/ 
+*/
 function genesisstyletrump_load_stylesheet() {
+
+	// If Parallax Pro theme is active, enqueue Genesis Style Trump at earlier priority
+	$priority = ( wp_get_theme() == 'Parallax Pro Theme' ) ? 14 : 999;
+
 	remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
-	add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 999 );
+	add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', $priority );
 }
