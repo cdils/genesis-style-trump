@@ -37,9 +37,23 @@ add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
  */
 function genesisstyletrump_load_stylesheet() {
 
-	// If Parallax Pro theme is active, enqueue Genesis Style Trump at earlier priority
-	$priority = 'Parallax Pro Theme' == wp_get_theme() ? 14 : 999;
+	// First find out the theme to limit calls to wp_get_theme
+	$theme = wp_get_theme(); 
 
+	// In all cases we will remove the stylesheet first
 	remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
-	add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', $priority );
+
+	// If Parallax Pro theme is active, enqueue Genesis Style Trump at earlier priority
+	if ( $theme == 'Parallax Pro Theme' ) { 
+		add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 14 );
+	}
+	else if ( $theme == 'Altitude Pro Theme' ) { 
+		// enquque main stylesheet 
+		add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 15 );
+		// enqueue altitude speficif css for background and whatnot
+		add_action( 'wp_enqueue_scripts', 'altitude_css', 16 );
+	}
+	else { 
+		add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 999 );
+	}
 }
