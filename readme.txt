@@ -1,6 +1,6 @@
 ===Genesis Style Trump===
 
-Contributors: cdils, garyj
+Contributors: cdils, GaryJ
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVHE2NBF3FBLW
 Tags: css, style sheet, genesis, genesiswp, studiopress
 Requires at least: 3.8.0
