@@ -13,7 +13,7 @@
  * Plugin Name:       Genesis Style Trump
  * Plugin URI:        http://wordpress.org/plugins/genesis-style-trump
  * Description:       Loads Genesis child theme style sheet after plugin styles.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Carrie Dils
  * Author URI:        http://www.carriedils.com
  * Text Domain:       genesis-style-trump

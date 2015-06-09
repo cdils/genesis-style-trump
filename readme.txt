@@ -4,8 +4,8 @@ Contributors: cdils, GaryJ
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVHE2NBF3FBLW
 Tags: css, style sheet, genesis, genesiswp, studiopress
 Requires at least: 3.8.0
-Tested up to: 3.9
-Stable tag: 1.0.1
+Tested up to: 4.2.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Loads Genesis child theme style sheet after plugin style sheets.
 This plugin removes the Genesis child theme style sheet and reloads it at a later priority, allowing plugin style
 sheets to load first.
 
-By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme style sheet trumps plugin styles without using the !important declaration. 
+By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme style sheet trumps plugin styles without using the !important declaration.
 
 Read more about why I created this plugin at `http://www.carriedils.com/woocommerce-genesis-important-style/`.
 
@@ -50,6 +50,11 @@ If the plugin does use !important, you can either !important it right back (your
 Not really. It’s designed only to help you override plugin styles more efficiently by reducing the need to use !important in your child theme’s style sheet.
 
 == Changelog ==
+
+= 1.0.2 =
+* Fixed support for Parallax Pro Theme
+* Added support for Altitude Pro Theme
+* Added support for Cafe Pro Theme
 
 = 1.0.1 =
 * Added support for Parallax Pro Theme
