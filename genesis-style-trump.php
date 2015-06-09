@@ -33,8 +33,6 @@ add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
 /**
  * Move Genesis child theme style sheet to a much later priority to give any plugins a chance to load first.
  *
- *
- * Themes utilizing parallax must also repo
  * @since 1.0.0
  */
 function genesisstyletrump_load_stylesheet() {
