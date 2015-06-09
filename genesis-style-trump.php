@@ -13,7 +13,7 @@
  * Plugin Name:       Genesis Style Trump
  * Plugin URI:        http://wordpress.org/plugins/genesis-style-trump
  * Description:       Loads Genesis child theme style sheet after plugin styles.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Carrie Dils
  * Author URI:        http://www.carriedils.com
  * Text Domain:       genesis-style-trump
@@ -33,13 +33,47 @@ add_action( 'genesis_setup', 'genesisstyletrump_load_stylesheet' );
 /**
  * Move Genesis child theme style sheet to a much later priority to give any plugins a chance to load first.
  *
+ *
+ * Themes utilizing parallax must also repo
  * @since 1.0.0
  */
 function genesisstyletrump_load_stylesheet() {
 
-	// If Parallax Pro theme is active, enqueue Genesis Style Trump at earlier priority
-	$priority = 'Parallax Pro Theme' == wp_get_theme() ? 14 : 999;
+	// Get name of current theme
++	$theme = wp_get_theme();
+
+	// Check to see if known themes with parallax scripts are active
+	// If so, set an earlier priority ($priority) for the main stylesheet
+	// and specify the additional function ($theme_function_that_loads_parallax_elements) to hook to wp_enqueue_scripts
+	switch ( $theme ) {
+
+		case 'Parallax Pro Theme':
+			$priority = 14;
+			$theme_function_that_loads_parallax_elements = 'parallax_css';
+			break;
+
+		case 'Altitude Pro Theme':
+			$priority = 14;
+			$theme_function_that_loads_parallax_elements = 'altitude_css';
+			break;
+
+		case 'Cafe Pro Theme':
+			$priority = 14;
+			$theme_function_that_loads_parallax_elements = 'cafe_css';
+			break;
+
+		default:
+			$priority = 999;
+			$theme_function_that_loads_parallax_elements = null;
+
+	}
 
 	remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
 	add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', $priority );
+
+	// If there is an additional function defined, hook it to wp_enqueue_scripts
+	if ( ! is_null( $theme_function_that_loads_parallax_elements ) ) {
+		add_action( 'wp_enqueue_scripts', $theme_function_that_loads_parallax_elements, $priority );
+	}
+
 }
