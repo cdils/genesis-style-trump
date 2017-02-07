@@ -60,6 +60,11 @@ function genesisstyletrump_load_stylesheet() {
 			$theme_function_that_loads_parallax_elements = 'cafe_css';
 			break;
 
+		case 'Foodie Pro Theme':
+			$priority = 999;
+			$theme_function_that_loads_parallax_elements = 'foodie_pro_add_customizer_styles';
+			break;
+
 		default:
 			$priority = 999;
 			$theme_function_that_loads_parallax_elements = null;
