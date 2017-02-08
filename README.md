@@ -9,8 +9,8 @@ This plugin removes the Genesis child theme style sheet and reloads it at a late
 Read more about why I created this plugin [here](http://www.carriedils.com/woocommerce-genesis-important-style/).
 
 ## Requirements
- * WordPress 3.8
- * Genesis 2.0
+ * WordPress 4.1
+ * Genesis 2.2
 
 ## Installation
 
@@ -44,4 +44,4 @@ Then go to your Plugins screen and click __Activate__.
 Built by [Carrie Dils](https://twitter.com/cdils)
 Copyright 2013 [Carrie Dils](http://www.carriedils.com/)
 
-Props to [Gary Jones](https://twitter.com/garyj) for editing suggestions and walking me through deployment. Thanks to [Aaron St. Pierre](https://twitter.com/ajsp) for suggestions and testing.
+Props to [Gary Jones](https://twitter.com/garyj) for editing suggestions and walking me through deployment. Thanks to [Aaron St. Pierre](https://twitter.com/ajsp) for suggestions and testing. Thank you to [seothemes](https://github.com/seothemes) for contributing the added support for Foodie Pro Theme.
