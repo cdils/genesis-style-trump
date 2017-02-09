@@ -16,7 +16,7 @@ Loads Genesis child theme style sheet after plugin style sheets.
 This plugin removes the Genesis child theme style sheet and reloads it at a later priority, allowing plugin style
 sheets to load first.
 
-By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme style sheet trumps plugin styles without using the !important declaration.
+By loading the child theme style sheet later, it allows for easier CSS customizations in child theme as the child theme style sheet trumps plugin styles without using the `!important` declaration.
 
 Read more about why I created this plugin at `http://www.carriedils.com/woocommerce-genesis-important-style/`.
 
@@ -41,18 +41,18 @@ loading after all plugin style sheets.
 
 = Can I change any plugins styles from my child themes style sheet? =
 
-Yes! As long as the plugin style sheet doesn't include !important, you'll be able to use the same selector in your child theme to override the plugin.
+Yes! As long as the plugin style sheet doesn't include `!important`, you'll be able to use the same selector in your child theme to override the plugin.
 
-If the plugin does use !important, you can either !important it right back (your !important will trump) or use a higher level of specificity.
+If the plugin does use `!important`, you can either `!important` it right back (your `!important` will trump) or use a higher level of specificity.
 
 = Does this plugin have any performance benefits? =
 
-Not really. It’s designed only to help you override plugin styles more efficiently by reducing the need to use !important in your child theme’s style sheet.
+No. It’s designed only to help you override plugin styles more efficiently by reducing the need to use `!important` in your child theme’s style sheet.
 
 == Changelog ==
 
 = 1.0.4 =
-* Added support to Foodie Pro Theme
+* Added support for Foodie Pro Theme
 * Updated Author URI
 * Updated required versions of WordPress and Genesis
 
